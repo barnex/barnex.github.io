@@ -48,7 +48,13 @@ After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelse
 
 ## SetupSoftware
 
-Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope at Dynamat lab, UGent. [https://github.com/barnex/SetupSoftware]
+Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope at Dynamat lab, UGent. [github.com/barnex/SetupSoftware](https://github.com/barnex/SetupSoftware)
 
 ![fig](https://https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
 
+
+## Bare-metal raspberry pi
+
+[baking C pi]: Bare-metal "kernel" for a raspberry Pi, that just writes PI on the display. Inspired by [baking pi](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/) but written mostly in C.
+
+![fig](https://raw.githubusercontent.com/barnex/bakingcpi/master/pi.JPG)
