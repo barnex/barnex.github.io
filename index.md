@@ -8,8 +8,14 @@ mumax3 is a GPU-accelerated micromagnetic simulator with ~1000 active users worl
 
 ![fig](http://mumax.github.io/web1.png)
 
-## brutray
+## bruteray
 
 [http://github.com/barnex/bruteray](bruteray) is a hobby ray tracer that generates farily good-looking images.
 
 ![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/039.jpg)
+
+## ev3cam
+
+[http://github.com/barnex/ev3cam](ev3cam) detects motion in a webcam stream, so that a LEGO mindstorms knows where to aim :-).
+
+![fig](https://raw.githubusercontent.com/barnex/ev3cam/master/motion.gif)
