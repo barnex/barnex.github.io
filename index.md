@@ -14,6 +14,12 @@ mumax3 is a GPU-accelerated micromagnetic simulator with ~1000 active users worl
 
 ![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/039.jpg)
 
+## coffe-cpu
+
+After drinking too much coffee, @MathiasHelsen and I built a softcore CPU on FPGA. It has an assembler and can solve a few challenges from projecteuler.net.
+![fig](https://raw.githubusercontent.com/barnex/coffee-cpu/master/sketch.jpg)
+
+
 ## ev3cam
 
 [http://github.com/barnex/ev3cam](ev3cam) detects motion in a webcam stream, so that a LEGO mindstorms knows where to aim :-).
