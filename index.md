@@ -4,7 +4,7 @@
 
 http://mumax.github.io
 
-[!fig]mumax.github.io/web1.png
+[!fig](mumax.github.io/web1.png)
 
 
 
