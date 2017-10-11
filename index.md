@@ -1,6 +1,6 @@
 # Arne Vansteenkiste's github projects
 
-This page contains a few picks from my repos at [http://github.com/barnex]()
+This page contains a few picks from my repos at [github.com/barnex](http://github.com/barnex)
 
 
 ## mumax3
@@ -19,7 +19,7 @@ mumax3 is a GPU-accelerated micromagnetic simulator with ~1000 active users worl
 
 ## coffe-cpu
 
-After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. It has an assembler and can solve a few challenges from projecteuler.net. [github.com/barnex/coffe-cpu](github.com/barnex/coffe-cpu)
+After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. It has an assembler and can solve a few challenges from projecteuler.net. [github.com/barnex/coffe-cpu](http://github.com/barnex/coffe-cpu)
 
 ![fig](https://raw.githubusercontent.com/barnex/coffee-cpu/master/sketch.jpg)
 
@@ -55,6 +55,6 @@ Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope a
 
 ## Bare-metal raspberry pi
 
-[baking C pi]: Bare-metal "kernel" for a raspberry Pi, that just writes PI on the display. Inspired by [baking pi](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/) but written mostly in C.
+[baking C pi](http://github.com/barnex/bakingcpi): Bare-metal "kernel" for a raspberry Pi, that just writes PI on the display. Inspired by [baking pi](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/) but written mostly in C.
 
 ![fig](https://raw.githubusercontent.com/barnex/bakingcpi/master/pi.JPG)
