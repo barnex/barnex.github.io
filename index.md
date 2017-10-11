@@ -20,7 +20,7 @@ mumax3 is a GPU-accelerated micromagnetic simulator with ~1000 active users worl
 
 ## coffe-cpu
 
-After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. It has an assembler and can solve a few challenges from projecteuler.net. [github.com/barnex/coffee-cpu](http://github.com/barnex/coffee-cpu)
+After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. The coffee-cpu has a 14-bit memory space. It has an assembler and can solve a few challenges from projecteuler.net. [github.com/barnex/coffee-cpu](http://github.com/barnex/coffee-cpu)
 
 ```
 // This test program cycles the hex display
@@ -63,7 +63,7 @@ ADD   R0     _start   A PC     -cmp
 
 Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope at Dynamat lab, UGent. [github.com/barnex/SetupSoftware](https://github.com/barnex/SetupSoftware)
 
-![fig](https://https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
+![fig](/https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
 
 
 ## Bare-metal raspberry pi
