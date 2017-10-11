@@ -19,14 +19,14 @@ mumax3 is a GPU-accelerated micromagnetic simulator with ~1000 active users worl
 
 ## coffe-cpu
 
-After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. It has an assembler and can solve a few challenges from projecteuler.net. [github.com/barnex/coffe-cpu]()
+After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. It has an assembler and can solve a few challenges from projecteuler.net. [github.com/barnex/coffe-cpu](github.com/barnex/coffe-cpu)
 
 ![fig](https://raw.githubusercontent.com/barnex/coffee-cpu/master/sketch.jpg)
 
 
 ## just-in-time-compiler
 
-[https://github.com/barnex/just-in-time-compiler] is a just-in-time compiler for mathematical expressions like `x + sqrt(y - 1)`. It compiles to x86 machine code wich can be immediately executed for, e.g., super-fast function plotting.
+[github.com/barnex/just-in-time-compiler](https://github.com/barnex/just-in-time-compiler) is a just-in-time compiler for mathematical expressions like `x + sqrt(y - 1)`. It compiles to x86 machine code wich can be immediately executed for, e.g., super-fast function plotting.
 
 ![fig](https://raw.githubusercontent.com/barnex/just-in-time-compiler/master/plotter.png)
 
