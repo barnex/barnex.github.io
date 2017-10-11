@@ -38,3 +38,9 @@ After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelse
 ![fig](https://raw.githubusercontent.com/barnex/ev3cam/master/motion.gif)
 
 
+## SetupSoftware
+
+Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope at Dynamat lab, UGent. [https://github.com/barnex/SetupSoftware]
+
+![fig](https://https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
+
