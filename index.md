@@ -38,6 +38,14 @@ After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelse
 ![fig](https://raw.githubusercontent.com/barnex/ev3cam/master/motion.gif)
 
 
+## Game of life
+
+
+[life](https://github.com/barnex/life): an insanely optimized implementation of Conway's Game of Life (a turing-complete "board game"). With extreme bit-fiddling, it achieves a ~300x speed-up over a naive implementation.
+
+![fig](https://raw.githubusercontent.com/barnex/life/master/img.png)
+
+
 ## SetupSoftware
 
 Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope at Dynamat lab, UGent. [https://github.com/barnex/SetupSoftware]
