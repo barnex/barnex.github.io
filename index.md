@@ -13,7 +13,7 @@ mumax3 is a GPU-accelerated micromagnetic simulator with ~1000 active users worl
 
 ## bruteray
 
-[bruteray](http://github.com/barnex/bruteray) is a hobby ray tracer that generates farily good-looking images.
+[bruteray](http://github.com/barnex/bruteray) is a hobby ray tracer that generates fairly good-looking images.
 
 ![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/039.jpg)
 
@@ -75,7 +75,7 @@ Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope a
 
 ## arnecompiler
 
-[This](https://github.com/barnex/arnecompiler) is a compiler a wrote a really long time ago. It can solve the first few problems of projecteuler.net.
+[This](https://github.com/barnex/arnecompiler) is a compiler I wrote a really long time ago. It can solve the first few problems of projecteuler.net.
 
 ```
 include(int)
