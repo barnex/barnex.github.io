@@ -63,7 +63,7 @@ ADD   R0     _start   A PC     -cmp
 
 Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope at Dynamat lab, UGent. [github.com/barnex/SetupSoftware](https://github.com/barnex/SetupSoftware)
 
-![fig](/https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
+![fig](https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
 
 
 ## Bare-metal raspberry pi
