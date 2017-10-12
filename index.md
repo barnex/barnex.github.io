@@ -146,6 +146,14 @@ for(variable(int i, 0), _lessl(i, 995), _incl(i), block(
 print_int(answer)
 ```
 
+## Chaos
+
+This is a very old (2006) project I made for a course on dynamical systems.
+
+[Read more...](https://github.com/barnex/Engine3://github.com/barnex/Chaos)
+
+![fig](https://raw.githubusercontent.com/barnex/Chaos/master/shots/julia3.png)
+
 ## Engine3D
 
 This is is a very old (2006) project where I wrote a 3D engine using Java 2D API.
