@@ -50,7 +50,7 @@ ADD   R0     _start   A PC     -cmp
 
 [This](https://github.com/barnex/just-in-time-compiler) is a just-in-time compiler for mathematical expressions like `x + sqrt(y - 1)`. It does constant-folding and registerization. The resulting x86 binary machine code can be immediately executed for, e.g., super-fast function plotting.
 
-[Read more...](https://github.com/barnex/just-in-time-compiler) i
+[Read more...](https://github.com/barnex/just-in-time-compiler)
 
 ![fig](https://raw.githubusercontent.com/barnex/just-in-time-compiler/master/plotter.png)
 
@@ -69,29 +69,6 @@ ADD   R0     _start   A PC     -cmp
 Like the unix utility `cat`, but for arbitrary memory. Ever wondered what's in your physical memory at `0x000F0000`? memcat has you covered:
 
 `sudo memcat -base 0x000F0000 -len 0x00010000 | strings -n 20`
-
-On my laptop this outputs:
-
-```
-f=MSDOt-f=MSWIt%f=NTFSt
-OIEMAG  IZ PTAPA IlFpoyp
-@0080 a  IHATHC IDC-R7703                        iPnoee rDCR-MOA ATIP
-Reboot and Select proper Boot device
-or Insert Boot Media in selected Boot device and press a key
-PCI ROM Setup, B00 D00 F0
-?l=\?*@Q?Q?Q?Q?Q?Q?~?X?
-P1: INTEL SSDSC2BW240A4
-Booting from CDROM with Multiple Boot Image
-Select Boot Image  :
-No Emulation Image :
-1.2MB  Floppy Image:
-1.44MB Floppy Image:
-2.88MB Floppy Image:
-Hard Disk Image    :
-Unknown Image      :
-```
-
-You can also write to arbitrary memory locations, but that's something better saved for embedded projects.
 
 [Read more...](https://github.com/barnex/memcat)
 
@@ -129,7 +106,7 @@ Home temperature control with Raspberry Pi and a web interface.
 
 Bare-metal kernel image for raspberry Pi. It writes PI on the display. Inspired by [baking pi](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/) but written mostly in C.
 
-[Read more...](http://github.com/barnex/bakingcpi): 
+[Read more...](http://github.com/barnex/bakingcpi)
 
 ![fig](https://raw.githubusercontent.com/barnex/bakingcpi/master/pi.JPG)
 
@@ -145,7 +122,7 @@ Go bindings for CUDA, my most starred project.
 
 ## arnecompiler
 
-[This](https://github.com/barnex/arnecompiler) is a compiler I wrote a really long time ago. It can solve the first few problems of projecteuler.net.
+[This](https://github.com/barnex/arnecompiler) is a hobby compiler I wrote a really long time ago (2010). It can solve the first few problems of projecteuler.net.
 
 [Read more...](https://github.com/barnex/arnecompiler) 
 
@@ -168,3 +145,11 @@ for(variable(int i, 0), _lessl(i, 995), _incl(i), block(
 
 print_int(answer)
 ```
+
+## Engine3D
+
+This is is a very old (2006) project where I wrote a 3D engine using Java 2D API.
+
+[Read more...](https://github.com/barnex/Engine3://github.com/barnex/Engine3D)
+
+![fig](https://raw.githubusercontent.com/barnex/Engine3D/master/Screenshots/light1.png)
