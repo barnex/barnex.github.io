@@ -146,6 +146,14 @@ for(variable(int i, 0), _lessl(i, 995), _incl(i), block(
 print_int(answer)
 ```
 
+## amumag
+
+[amumag](https://github.com/barnex/amumag) is the Finite-Element micromagnetic simulator I wrote for my PhD thesis.
+
+[Read more...](https://github.com/barnex/amumag)
+
+![fig](https://raw.githubusercontent.com/barnex/amumag/master/amuview.png)
+
 ## Chaos
 
 This is a very old (2006) project I made for a course on dynamical systems.
