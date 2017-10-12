@@ -1,23 +1,23 @@
 # Arne Vansteenkiste's github projects
 
-This page contains a few picks from my repos at [github.com/barnex](http://github.com/barnex)
+This page contains a few picks from my repos at [github.com/barnex](https://github.com/barnex)
 
 
 ## mumax3
 
-[mumax3](http://mumax.github.io) is a GPU-accelerated micromagnetic simulator with ~1000 active users worldwide. It is [cited](http://aip.scitation.org/doi/10.1063/1.4899186) in 400 scientific publications.
+[mumax3](https://mumax.github.io) is a GPU-accelerated micromagnetic simulator with ~1000 active users worldwide. It is [cited](http://aip.scitation.org/doi/10.1063/1.4899186) in 400 scientific publications.
 
-[Read more...](http://mumax.github.io) 
+[Read more...](https://mumax.github.io) 
 
-![fig](http://mumax.github.io/web1.png)
+![fig](https://mumax.github.io/web1.png)
 
 
 
 ## bruteray
 
-[bruteray](http://github.com/barnex/bruteray) is a hobby ray tracer employing physically accurate light transport to generate realistic images.
+[bruteray](https://github.com/barnex/bruteray) is a hobby ray tracer employing physically accurate light transport to generate realistic images.
 
-[Read more...](http://github.com/barnex/bruteray) 
+[Read more...](https://github.com/barnex/bruteray) 
 
 ![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/039.jpg)
 
@@ -27,7 +27,7 @@ This page contains a few picks from my repos at [github.com/barnex](http://githu
 
 After drinking too much coffee, [@MathiasHelsen](https://github.com/mathiashelsen) and I built a softcore CPU on FPGA. The coffee-cpu has a 14-bit memory space. It has an assembler and can solve a few challenges from projecteuler.net.
 
-[Read more...](http://github.com/barnex/coffee-cpu)
+[Read more...](https://github.com/barnex/coffee-cpu)
 
 
 ```
@@ -57,9 +57,9 @@ ADD   R0     _start   A PC     -cmp
 
 ## ev3cam
 
-[ev3cam](http://github.com/barnex/ev3cam) detects motion in a webcam stream (using gstreamer), so that a LEGO mindstorms knows where to aim.
+[ev3cam](https://github.com/barnex/ev3cam) detects motion in a webcam stream (using gstreamer), so that a LEGO mindstorms knows where to aim.
 
-[Read more...](http://github.com/barnex/ev3cam) 
+[Read more...](https://github.com/barnex/ev3cam) 
 
 ![fig](https://raw.githubusercontent.com/barnex/ev3cam/master/motion.gif)
 
@@ -106,7 +106,7 @@ Home temperature control with Raspberry Pi and a web interface.
 
 Bare-metal kernel image for raspberry Pi. It writes PI on the display. Inspired by [baking pi](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/) but written mostly in C.
 
-[Read more...](http://github.com/barnex/bakingcpi)
+[Read more...](https://github.com/barnex/bakingcpi)
 
 ![fig](https://raw.githubusercontent.com/barnex/bakingcpi/master/pi.JPG)
 
