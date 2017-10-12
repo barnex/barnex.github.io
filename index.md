@@ -150,14 +150,14 @@ print_int(answer)
 
 This is a very old (2006) project I made for a course on dynamical systems.
 
-[Read more...](https://github.com/barnex/Engine3://github.com/barnex/Chaos)
+[Read more...](https://github.com/barnex/Chaos)
 
 ![fig](https://raw.githubusercontent.com/barnex/Chaos/master/shots/julia3.png)
 
 ## Engine3D
 
-This is is a very old (2006) project where I wrote a 3D engine using Java 2D API.
+This is is a very old (2005-ish) project where I wrote a 3D engine using Java 2D API.
 
-[Read more...](https://github.com/barnex/Engine3://github.com/barnex/Engine3D)
+[Read more...](https://github.com/barnex/Engine3D)
 
 ![fig](https://raw.githubusercontent.com/barnex/Engine3D/master/Screenshots/light1.png)
