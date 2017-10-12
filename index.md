@@ -64,6 +64,37 @@ ADD   R0     _start   A PC     -cmp
 ![fig](https://raw.githubusercontent.com/barnex/ev3cam/master/motion.gif)
 
 
+## memcat
+
+Like the unix utility `cat`, but for arbitrary memory. Ever wondered what's in your physical memory at `0x000F0000`? memcat has you covered:
+
+`sudo memcat -base 0x000F0000 -len 0x00010000 | strings -n 20`
+
+On my laptop this outputs:
+
+```
+f=MSDOt-f=MSWIt%f=NTFSt
+OIEMAG  IZ PTAPA IlFpoyp
+@0080 a  IHATHC IDC-R7703                        iPnoee rDCR-MOA ATIP
+Reboot and Select proper Boot device
+or Insert Boot Media in selected Boot device and press a key
+PCI ROM Setup, B00 D00 F0
+?l=\?*@Q?Q?Q?Q?Q?Q?~?X?
+P1: INTEL SSDSC2BW240A4
+Booting from CDROM with Multiple Boot Image
+Select Boot Image  :
+No Emulation Image :
+1.2MB  Floppy Image:
+1.44MB Floppy Image:
+2.88MB Floppy Image:
+Hard Disk Image    :
+Unknown Image      :
+```
+
+You can also write to arbitrary memory locations, but that's something better saved for embedded projects.
+
+[Read more...](https://github.com/barnex/memcat)
+
 
 ## Game of life
 
@@ -82,6 +113,15 @@ Not-so-aptly-named software to control the Magneto-Optical Scanning Microscope a
 [Read more...](https://github.com/barnex/SetupSoftware)
 
 ![fig](https://raw.githubusercontent.com/barnex/SetupSoftware/master/Moka/screenshot.png)
+
+
+## Raspberry heat
+
+Home temperature control with Raspberry Pi and a web interface.
+
+[Read more...](https://github.com/barnex/raspberryheat)
+
+![fig](https://raw.githubusercontent.com/barnex/raspberryheat/master/rh2.png)
 
 
 
