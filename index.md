@@ -94,6 +94,15 @@ Bare-metal kernel image for raspberry Pi. It writes PI on the display. Inspired 
 ![fig](https://raw.githubusercontent.com/barnex/bakingcpi/master/pi.JPG)
 
 
+## Go bindings for CUDA
+
+Go bindings for CUDA, my most starred project. 
+
+[Read more...](https://github.com/barnex/cuda5)
+
+![fig](https://raw.githubusercontent.com/barnex/cuda5/master/gophergpu.png)
+
+
 ## arnecompiler
 
 [This](https://github.com/barnex/arnecompiler) is a compiler I wrote a really long time ago. It can solve the first few problems of projecteuler.net.
