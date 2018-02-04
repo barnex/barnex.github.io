@@ -19,7 +19,7 @@ This page contains a few picks from my repos at [github.com/barnex](https://gith
 
 [Read more...](https://github.com/barnex/bruteray) 
 
-![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/039.jpg)
+![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/052.jpg)
 
 
 
@@ -63,14 +63,6 @@ ADD   R0     _start   A PC     -cmp
 
 ![fig](https://raw.githubusercontent.com/barnex/ev3cam/master/motion.gif)
 
-
-## memcat
-
-Like the unix utility `cat`, but for arbitrary memory. Ever wondered what's in your physical memory at `0x000F0000`? memcat has you covered:
-
-`sudo memcat -base 0x000F0000 -len 0x00010000 | strings -n 20`
-
-[Read more...](https://github.com/barnex/memcat)
 
 
 ## Game of life
