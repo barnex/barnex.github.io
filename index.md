@@ -19,7 +19,7 @@ This page contains a few picks from my repos at [github.com/barnex](https://gith
 
 [Read more...](https://github.com/barnex/bruteray) 
 
-![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/052.jpg)
+![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/063.jpg)
 
 
 
