@@ -1,0 +1,56 @@
+
+---
+
+## Cameras
+
+---
+
+## Calculating the light field
+
+**1** The **Camera** constructs a Ray starting from a certain pixel position (u,v), pointing into the scene. A camera is anything that can turn a pixel position into a `Ray`:
+
+```go
+type Camera interface{
+	// RayFrom constructs a Ray starting from pixel position (u, v) in the unit square.
+	RayFrom(u, v float64) *Ray
+}
+```
+
+**2** All **Objects** in our scene test for **intersection** with the ray. The only thing an `Object` must be capable of is to find its intersection with a `Ray`:
+
+```go
+type Object interface{
+	// Intersect returns a non-zero HitRecord if the Ray intersects the Object.
+	// The HitRecord records the position, surface normal and matrial of the intersection.
+	Intersect(r *Ray)HitRecord
+}
+```
+If the ray actually intersects the object, then `Intersect` returns a non-zero `HitRecord`. The HitRecord stores information about the intersection point: its postion `T` along the ray, the object's surface [normal](https://en.wikipedia.org/wiki/Normal_(geometry)) at the intersection point, and the object's material:
+
+```go
+type HitRecord struct{
+	T        float64
+	Normal   Vec
+	Material Material
+}
+```
+
+The `HitRecord` contains all the information we need to eventually find the pixel's color. But we only use the frontmost `HitRecord` (the one with the smallest positive `T`). The other hitrecords are behind it (occluded), so we don't want to waste time evaluating their color.
+
+![hitrecord](hitrecord.png)
+*Each Object intersected by a Ray returns a HitRecord, recording the position, surface normal, and material at the intersection point. Here, the sphere's HitRecord is in front of the cube's, so we'll evaluate the sphere's Material.*
+
+
+**3** Now that we have the frontmost `Hitrecord`, we can finally evaluate the color of its **Material**. A Material is anything that can tell you its color, given the angle you're looking under (i.e., the ray), the position and normal vector where the ray hits the object, and all other objects in the scene (!).
+
+```go
+type Material interface{
+	Eval(s *Scene, r *Ray, T float64, normal Vec) Color
+}
+```
+
+Evaluating a `Material`'s color is a recursive procedure. It may involve casting new rays (e.g. reflected with respect to the incoming ray), evaluating their color, and so on. That is why we pass the entire `Scene` (collection of all `Object`s) as an argument. 
+
+If this recursion does not spontaneously end (e.g. by hitting a non-recursive material), then we need to artificially limit it to a maximum depth referred to as `RecursionDepth`.
+
+That is really all there is to the ray tracing algorithm. All that is left to do is provide some concrete implementations of the single-method interfaces `Camera`, `Object` and `Material`.
