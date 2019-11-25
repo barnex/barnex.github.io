@@ -58,7 +58,7 @@ Some other geometric primitives that we'll need later on are a 3x3 [Matrix](http
 
 ---
 
-## Part 1: Ray tracing basics
+## [Part 1](#basics): Ray tracing basics
 **2019-11-25**
 
 If you're completely new to ray tracing, you might want to familiarize yourself with the concept [here](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)).
@@ -121,3 +121,7 @@ LightField(camera.RayFrom(u,v))
 ```
 
 ---
+
+## Part 2: Cameras
+
+In [Part 1](#basics)
