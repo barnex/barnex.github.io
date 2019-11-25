@@ -1,4 +1,5 @@
 
+It is important to note that a ray is just a half-line, not necessarily a beam of light. In ray tracing we often follow the light backwards. A ray starts from a pixel in the camera, travels out of the lens, bounces around the scene, and eventually ends at a light source. Thus light does not neccesarily travel in the direction of a ray -- it often travels oppositely. Fortunately, the laws of optics remain the same if we reverse the light's direction. So we generally don't need to worry about this. 
 ---
 
 ## Cameras
