@@ -21,6 +21,14 @@ Although I borrowed some naming from [PovRay](http://www.povray.org/) and [pbrt]
 
 ---
 
+## Contents
+
+[Primitives](#part-0-primitives) <br/>
+[Ray Tracing Basics](#part-1-ray-tracing-basics) <br/>
+[Cameras](#part-2-cameras)  <br/>
+
+---
+
 ## Part 0: Primitives
 **2019-11-24**
 
@@ -58,13 +66,13 @@ Some other geometric primitives that we'll need later on are a 3x3 [Matrix](http
 
 ---
 
-## [Part 1](#basics): Ray tracing basics
+## Part 1: Ray tracing basics
 **2019-11-25**
 
 If you're completely new to ray tracing, you might want to familiarize yourself with the concept [here](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)).
 
 
-In a perhaps unusual approach, I define the ray tracing algorithm simply as:
+In perhaps an unusual approach, I define the ray tracing algorithm simply as:
 
 ```
 Image = LightField(Camera)
@@ -73,6 +81,12 @@ Image = LightField(Camera)
 which reads: *To calculate an Image, evaluate the Light Field at the Camera*.
 
 In what follows, I will explain what that means, and break down concepts like `LightField` into simpler,  building blocks like `Object` and `Material`. These will be broken down further until the entire algorithm has been explained.
+
+The fully expanded version will look something like:
+
+```
+Image = Sample(Material(Frontmost(Intersect(Camera))))
+```
 
 But we'll start from the top by explaining the concepts Light Field and Camera.
 
@@ -84,7 +98,7 @@ The Light Field of a scene is a function that gives us the light's brightness, s
 I.e., if our eye was positioned at a ray's start and we looked along the ray's direction, then we would see the color returned by the light field.
 
 ![lightfield](lightfield.png)
-*The light field of a scene encodes the color seen by any given ray.*
+*The light field of a scene returns the color seen by any given ray.*
 
 In Go this can be expressed as:
 
@@ -112,16 +126,50 @@ type Camera interface{
 }
 ```
 
-### Conclusion
-
-We have broken down the ray tracing algorithm in two independent parts: the Camera implementation, and calculating a Light Field. Once we have implemented both, we can find an image's color at pixel position (u,v) as:
+Thus, we have broken down the ray tracing algorithm in two independent parts: the Camera implementation, and calculating the Light Field. Once we have implemented both, we can find an image's color at pixel position (u,v) as:
 
 ```go
 LightField(camera.RayFrom(u,v))
 ```
 
+Actual Camera and LightField implementations are discussed below.
+
 ---
 
 ## Part 2: Cameras
 
-In [Part 1](#basics)
+In [Part 1](#part-1-ray-tracing-basics), we defined a camera as anything that can construct a ray corresponding to a pixel position:
+
+```go
+type Camera interface{
+	RayFrom(u, v float64) Ray
+}
+```
+
+Note that at this stage, we address pixels by their floating-point position `(u, v)` where `u` and `v` lie in the interval `[0, 1]`. These pixel coordinates can be easily mapped to integer pixel indices in the rectangle `(0,0)-(width,height)`.
+
+In this part, we will discuss concrete camera implementations.
+
+### Projective Camera
+
+Your DSLR or smartphone camera are projective cameras. They project the scene onto a rectangle.
+
+Rays from a projective camera start from the Focal Point. The focal point is a certain distance behind the (virtual) image plane. This distance, the focal length, determines the camera's field of view. Wide-angle cameras have a large field of view (e.g. 120 degrees), while telephoto cameras have a narrow field of view (e.g. 20 degrees).
+
+By convention, the image plane has size 1. So the relation between the focal length `f` and the (horizontal) field of view `FOV` is:
+
+```
+ FOV = 2*atan(f/2)
+```
+
+![projective](projective.png)
+
+Note that the image plane is *virtual*, it merely serves to construct ray directions. The camera can see all objects in front of the focal point, regardless of whether they are in front or behind of the image plane.
+
+
+
+### Isometric Camera
+
+### Environment Map
+
+### Transformed Camera
