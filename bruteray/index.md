@@ -107,7 +107,9 @@ In Go this can be expressed as:
 type LightField func(Ray) Color
 ```
 
-We'll explain how to calculate the Light Field later on.
+We'll explain how to calculate the light field later on.
+
+Apart from its use in ray tracing, the light field is an interesting physical quantity in its own right. It is a 5-dimensional function that tells us everything there is to know about the light emanating from an object. There exist specialized [cameras](https://en.wikipedia.org/wiki/Light-field_camera) that can capture the light field (at least in a part of space) without projecting it onto a 2 dimensions. This information can later be used to, e.g., re-focus an image or change the lens aperture, which is quite remarkable.
 
 ### The Camera
 
@@ -138,7 +140,7 @@ Actual Camera and LightField implementations are discussed below.
 
 ## Part 2: Cameras
 
-In [Part 1](#part-1-ray-tracing-basics), we defined a camera as anything that can construct a ray corresponding to a pixel position:
+In this part, we will discuss concrete camera implementations for the interface we defined in [Part 1](#part-1-ray-tracing-basics). We defined a camera as anything that can construct a ray corresponding to a pixel position:
 
 ```go
 type Camera interface{
@@ -148,13 +150,18 @@ type Camera interface{
 
 Note that at this stage, we address pixels by their floating-point position `(u, v)` where `u` and `v` lie in the interval `[0, 1]`. These pixel coordinates can be easily mapped to integer pixel indices in the rectangle `(0,0)-(width,height)`.
 
-In this part, we will discuss concrete camera implementations.
 
 ### Projective Camera
 
-Your DSLR or smartphone camera are projective cameras. They project the scene onto a rectangle.
+DSLR and smartphone camera are projective cameras. They project the light field onto a rectangle. This projection introduces perspective: far-away objects appear smaller.
 
-Rays from a projective camera start from the Focal Point. The focal point is a certain distance behind the (virtual) image plane. This distance, the focal length, determines the camera's field of view. Wide-angle cameras have a large field of view (e.g. 120 degrees), while telephoto cameras have a narrow field of view (e.g. 20 degrees).
+Rays from a projective camera start from the **Focal Point** (sometimes called the _Eye_). The focal point is a certain distance behind the (virtual) **image plane**. This distance, the **focal length**, determines the camera's **field of view** (FOV). Wide-angle cameras have a large field of view (e.g. 120 degrees), while telephoto cameras have a narrow field of view (e.g. 20 degrees).
+
+![projective](projective.png)
+
+Note that the image plane is *virtual*, it merely serves to construct ray directions. The camera can see all objects in front of the focal point, regardless of whether they are in front or behind of the image plane.
+
+
 
 By convention, the image plane has size 1. So the relation between the focal length `f` and the (horizontal) field of view `FOV` is:
 
@@ -162,11 +169,20 @@ By convention, the image plane has size 1. So the relation between the focal len
  FOV = 2*atan(f/2)
 ```
 
-![projective](projective.png)
+### Depth of Field
 
-Note that the image plane is *virtual*, it merely serves to construct ray directions. The camera can see all objects in front of the focal point, regardless of whether they are in front or behind of the image plane.
+Real cameras have a finite depth of field, causing out-of-focus areas to appear blurred. This makes photos appear more natural and can also be used for artistic effect.
+
+Ray tracing can easily produce images with a finite depth of field. For this, we need to make our camera more realistic by letting the rays start not from a single point, but from somewhere inside a finite-sized aperture.
 
 
+![dof](dof.png)
+
+<center>
+<video autoplay loop muted poster="dof0.jpg">
+<source type="video/webm" src="dof.webm">
+</video>
+</center>
 
 ### Isometric Camera
 
