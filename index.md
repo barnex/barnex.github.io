@@ -21,6 +21,13 @@ This page contains a few picks from my repos at [github.com/barnex](https://gith
 
 ![fig](https://raw.githubusercontent.com/barnex/bruteray/master/shots/063.jpg)
 
+## rusty-mazes
+
+[rusty-mazes](https://github.com/barnex/rusty-mazes) is a 2D puzzle/maze game + editor written in Rust.
+
+[Read more...](https://github.com/barnex/rusty-mazes) 
+
+[![fig](https://raw.githubusercontent.com/barnex/rusty-mazes/master/mazes-video.png)](https://github.com/barnex/rusty-mazes))
 
 
 ## coffee-cpu
@@ -43,6 +50,15 @@ STORE Rcount display  N R0     -cmp
 ADD   Rcount 1        A Rcount -cmp
 ADD   R0     _start   A PC     -cmp
 ```
+
+
+## hamstr-game
+
+[hamstr-game](https://github.com/barnex/hamstr-game) is a 2D platformer game with ray-traced shadows written in Rust.
+
+[Read more...](https://github.com/barnex/hamstr-game) 
+
+[![fig](https://raw.githubusercontent.com/barnex/hamstr-game/master/hamstr-edit.png)](https://github.com/barnex/hamstr-game))
 
 
 
