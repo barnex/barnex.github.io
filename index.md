@@ -5,7 +5,7 @@ This page contains a few picks from my repos at [github.com/barnex](https://gith
 
 ## mumax3
 
-[mumax3](https://mumax.github.io) is a GPU-accelerated micromagnetic simulator with ~1000 active users worldwide. It is [cited](http://aip.scitation.org/doi/10.1063/1.4899186) in 400 scientific publications.
+[mumax3](https://mumax.github.io) is a GPU-accelerated micromagnetic simulator with ~1000 active users worldwide. It is [cited](http://aip.scitation.org/doi/10.1063/1.4899186) in over 900 scientific publications.
 
 [Read more...](https://mumax.github.io) 
 
