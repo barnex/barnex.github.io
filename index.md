@@ -27,7 +27,7 @@ This page contains a few picks from my repos at [github.com/barnex](https://gith
 
 [Read more...](https://github.com/barnex/rusty-mazes) 
 
-[![fig](https://raw.githubusercontent.com/barnex/rusty-mazes/master/mazes-video.png)](https://github.com/barnex/rusty-mazes))
+[![fig](https://raw.githubusercontent.com/barnex/rusty-mazes/master/mazes-video.png)](https://github.com/barnex/rusty-mazes)
 
 
 ## coffee-cpu
@@ -58,7 +58,7 @@ ADD   R0     _start   A PC     -cmp
 
 [Read more...](https://github.com/barnex/hamstr-game) 
 
-[![fig](https://raw.githubusercontent.com/barnex/hamstr-game/master/hamstr-edit.png)](https://github.com/barnex/hamstr-game))
+[![fig](https://raw.githubusercontent.com/barnex/hamstr-game/master/hamstr-edit.png)](https://github.com/barnex/hamstr-game)
 
 
 
